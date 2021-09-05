@@ -67,7 +67,7 @@ Utilizing the Sunrise Clock, people that live in areas such as Alaska, where in 
 
 As a group, we went through severeal iterations of storyboards to make sure that our drawings displayed the way that we intended our sunrise clock to work. These storyboard iterations are shown below:
 
-![image5](https://user-images.githubusercontent.com/89855265/132140120-d41ac7f9-8006-4164-8096-bcf2c3ceb013.jpg =250x250)
+![image5](https://user-images.githubusercontent.com/89855265/132140120-d41ac7f9-8006-4164-8096-bcf2c3ceb013.jpg)
 ![image2](https://user-images.githubusercontent.com/89855265/132140123-2565914f-1330-4e80-b0db-67caaff658cb.jpg)
 ![image3](https://user-images.githubusercontent.com/89855265/132140124-e4f7ec9a-6871-4ee4-a49b-96582ebb4300.jpg)
 
@@ -75,40 +75,69 @@ As a group, we went through severeal iterations of storyboards to make sure that
 
 \*\***Summarize feedback you got here.**\*\*
 
+The idea that we originally came up with only woke up users with a bright white light, not mimicing any natual light given off by the sun. We realized that this bright white light will end up being just as jarring as the alarm, so we decided to have it slowly get brighter and be able to mimic a natural sunrise that ultilizes different color and brightness settings for the users weather preferences.
 
 ## Part B. Act out the Interaction
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+We experienced some issues with the light source from the tinkerbell application not being bright enough to actually wake someone, or make a noticable lighting difference even in the dark. To combat this issue, we utilized additional light sources so that there is a noticable difference in brightness as the time goes onwards so that it would actually be bright enough to wake someone up.
+
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
+Similar to what was stated in the previous question, we needed to use a stronger light source in order to project the desired amount of light throughout the room. Since the additional light sources that we had available only had a single 'on' setting with the no color options, this made it so that we were unable to display the additional lighting preferences that we intended the device to have.
+
+In addition to the device being able to wake someone up with a natural looking light, we had discussed the device also being able to change colors depending on the weather outside, effectively acting as a thermometer. This part would only come into effect after the user has already woken, since if it began before the user is awake, it would defeat the original purpose of the device.
+
+Below is an additional photo showing us setting up for the video interaction:
+![image4](https://user-images.githubusercontent.com/89855265/132144084-8acc941d-8593-43cf-9879-5e138c03410f.jpg)
 
 
 ## Part C. Prototype the device
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
+In my experience using the tinkerbell program, I found that it was not very compatible with the school wifi, as the wifi sets up profiles for each device that is connected to the network, making it a much more diffucult process to be able to connect the laptop to a phone to display the tinkerbell program. We resorted to using personal hotspot to avoid these wifi network problems. 
 
 ## Part D. Wizard the device
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
 
+
+https://user-images.githubusercontent.com/89855265/132144545-ddbeb5fc-b771-4b22-a49d-3a0a3834599f.mp4
+
+
+
 \*\***Show the follow-up work here.**\*\*
 
+Between the two takes, we decided that the blinds did in the apartment at the house were not sufficient in blocking out the light, so as shown in the picture above in part B, we had Lauren and Maggie attempt to block out the sun coming through the window with a sheet. In addition to this, we attempted to use a projector to increase the amount of light from the device, but instead we decided that we would just use the natural light that we already had since it was mid-day.
 
 ## Part E. Costume the device
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
+Below is the original sketch and cutout of what we would imagine the device to look like. The 3 colored buttons on top are to select the weather mimicing preferences of the user, and the yellow paper coming off of the top is signifying light being emitted from the device. 
+![image1](https://user-images.githubusercontent.com/89855265/132144171-dab70aee-fb24-42b2-9c9b-a27c290be3de.jpg)
+
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+We wanted the user to have minimal interaction with the device so that they have a more pleasant experience waking up opposed to the traditional alarm clock method. To minimize interaction, we incorporated 3 buttons corresponding to preset weather preferences on a regular looking alarm clock device.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+
+
+https://user-images.githubusercontent.com/89855265/132144795-25216013-61cc-454b-8549-0b0080fe1d0c.mp4
+
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 
+All Collaborators with Corresponding NetIds:
+Alex Kluver - abk98, Lauren Tran - lat89, Magdelena Horowitz - myh26, Mayur Bhandary - mb2393
 
 # Staging Interaction, Part 2 
 
