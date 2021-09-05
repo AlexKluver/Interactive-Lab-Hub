@@ -67,7 +67,10 @@ Utilizing the Sunrise Clock, people that live in areas such as Alaska, where in 
 
 As a group, we went through severeal iterations of storyboards to make sure that our drawings displayed the way that we intended our sunrise clock to work. These storyboard iterations are shown below:
 
-![Storyboard image 1](/Lab 1/image2.jpg)
+![image2](https://user-images.githubusercontent.com/89855265/132140055-e696d57a-5cfb-4b57-9222-4892228a191c.jpg)
+![image5](https://user-images.githubusercontent.com/89855265/132140060-3a9bdc23-7fbb-4b58-8afc-81519314a675.jpg)
+![image3](https://user-images.githubusercontent.com/89855265/132140064-c89a38a4-df67-43aa-8f69-a410c85f115f.jpg)
+
 
 \*\***Summarize feedback you got here.**\*\*
 
