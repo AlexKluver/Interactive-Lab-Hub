@@ -169,6 +169,8 @@ Our group has made the decision to use the same general idea of a sunrise alarm 
 
 \*\***Include a picture of your storyboard here**\*\*
 
+![IMG_5781](https://user-images.githubusercontent.com/89855265/132706057-ebcd64ef-6808-435b-bf8f-a1c7b44bff1f.JPG)
+
 ## Part B. Act out the Interaction
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
