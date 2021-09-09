@@ -150,6 +150,8 @@ You will be assigned three partners from another group. Go to their github pages
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+The feedback I have received from others on our sunrise alarm was very positive. The most common concern that was expressed from the peer review was that there would not be a significant enough amount of light to wake someone. A suggested fix to this light problem was to hook up the device to the room lights, that way it would provide a significant amount of lighting. The problem with this suggestion is that then the light color would not be customizable and would be stuck with the color that the room lighting is. Another concern expressed with our device was that it would only work well with a single user, and that the users partner would also be woken up by our device when the lights are turned on. This is an aspecct we discussed as a group and could be fixed by embedding the device into a sleep mask, this way it would not disturb others in the room.  
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
@@ -158,3 +160,21 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+## Part 2A. Plan 
+
+\*\***Describe your setting, players, activity and goals here.**\*\*
+
+Our group has made the decision to use the same general idea of a sunrise alarm with additional improvements based on the peer feedback we received from our classmates. We are still going to make a light-based alarm, but instead we have decided to embed the device into a sleeping mask. By embedding the device into a sleep mask, we are solving the problem with the device lighting not being bright enough to wake someone and we also solve the problem with our device accidentily waking someone else in the room. As an additional feature for the device, we are adding vibration to the mask to give the user another reason to wake up.
+
+\*\***Include a picture of your storyboard here**\*\*
+
+## Part B. Act out the Interaction
+
+\*\***Are there things that seemed better on paper than acted out?**\*\*
+
+\*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
+
+
+
