@@ -174,9 +174,31 @@ Our group has made the decision to use the same general idea of a sunrise alarm 
 ## Part B. Act out the Interaction
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
+This iteration of our design had much less problems than our first iteration that we acted out in part 1 of the lab. Since we did not require to have the room dark to display the function of the device, the entire process went much smoother.
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+While we were filming the device interaction, one good idea that was mentioned was that instead of having the sleeping mask have set options to choose from for light colors, instead it should be either voice activated to choose the desired color and time to wake up, or to choose the desired color on a color wheel and set the time to wake the same way alarms are usually set
+
+## Part C. Prototype the device
+
+\*\***Give us feedback on Tinkerbelle.**\*\*
+During this iteration of the lab, we decided to not use the tinkerbell software that was provided to us, since the process to get it to work properly was far too long for a feature that could easily be google searched.
+
+## Part E. Costume the device
+
+\*\***Include sketches of what your device might look like here.**\*\*
+As seen in the provided pictures, we have changed the design of our alarm clock so that it is integrated into a sleeping mask, solving the problem of the light source not being powerful enough to wake up someone if the alarm clock is not near them
+
+![IMG_5812](https://user-images.githubusercontent.com/89855265/132994466-84da25bf-eb03-49b1-b61d-982fce6208ff.JPG)
+![IMG_5813](https://user-images.githubusercontent.com/89855265/132995375-96534a8e-2f1a-46ee-b121-0c3e37207654.JPG)
 
 
+
+\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+We wanted our device to look like a traditional sleep mask used to block out the light while one sleeps.
+
+## Part F. Record
+
+\*\***Take a video of your prototyped interaction.**\*\*
 
 
