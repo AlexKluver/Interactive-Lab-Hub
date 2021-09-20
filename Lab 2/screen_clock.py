@@ -4,6 +4,9 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+from time import strftime, sleep
+import webcolors
+from adafruit_rgb_display.rgb import color565
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -28,6 +31,11 @@ disp = st7789.ST7789(
     x_offset=53,
     y_offset=40,
 )
+#setting up buttons
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonA.switch_to_input()
 
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
@@ -54,18 +62,59 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
-
+font2 = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 50)
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+y=top
+draw.text((x,y),"Find the right combonation\n to see current the time\n Press buttons to start",font = font, fill = "#FFFFFF")
+disp.image(image,rotation)
+i=0
+h=0
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
-
-    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-
+    #draw.rectangle((0, 0, width, height), outline=0, fill=0)
+ 
+    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py
+    if buttonB.value and not buttonA.value:
+        if i == 0 or i == 2:
+            if i == 0:
+                disp.fill(color565(0,0,0))
+            draw.rectangle((0,0,width,height), outline = 0, fill = 0)
+            disp.fill_rectangle(h,0,35 ,width,color565(0,255,0))
+            i += 1
+            h += 35
+        else:
+            draw.rectangle((0,0,width,height), outline = 0,fill = 0)
+            disp.fill_rectangle(h,0,35,width,color565(255,0,0))
+    if buttonA.value and not buttonB.value:
+        if i == 0:
+            disp.fill(color565(0,0,0))
+        if i == 1:
+            draw.rectangle((0,0,width,height), outline=0, fill=0)
+            disp.fill_rectangle(h,0,35,width,color565(0,255,0))
+            i += 1
+            h += 35
+        else:
+            draw.rectangle((0,0,width,height), outline=0, fill=0)
+            disp.fill_rectangle(h,0,35,width,color565(255,0,0))
+    if not buttonA.value and not buttonB.value and i == 3:
+        disp.fill(color565(0,0,0))
+        while True:
+            draw.rectangle((0,0,width,height),outline=0,fill=0)
+            time_hr = int(strftime("%H"))
+            time_min = int(strftime("%M"))
+            time_sec = int(strftime("%S"))
+            y = 45
+            #draw.text((15, y), time_display, font=font2, fill="#FFFFFF")
+            #disp.image(image,rotation)
+            disp.fill_rectangle(0,0,35,time_hr * 10,color565(0,0,255))
+            disp.fill_rectangle(50,0,35,time_min * 4,color565(0,255,255))
+            disp.fill_rectangle(100,0,35,time_sec * 4,color565(255,255,0))
+            time.sleep(1)
+            if time_sec == 0:
+                disp.fill(color565(0,0,0))
     # Display image.
-    disp.image(image, rotation)
-    time.sleep(1)
+    time.sleep(0.1)
