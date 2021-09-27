@@ -103,6 +103,9 @@ To improve upon the clock design that I have made in the first part of the lab, 
 
 For the actual clock part, I would like to change it so that the bars go across the screen from left to right instead of the opposite, and also display the actual number of the hour/minute/second values somewhere next to the time bars.
 
+![image](https://user-images.githubusercontent.com/89855265/134969407-ebee9f37-9b44-4ced-9094-1e4107b894fa.png)
+
+
 # Prep for Part 2
 
 1. Pick up remaining parts for kit.
@@ -115,8 +118,12 @@ Pull Interactive Lab Hub updates to your repo.
 
 Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
 
-As always, make sure you document contributions and ideas from others explicitly in your writeup.
+As stated in the last lab writeup, I wanted to improve upon my first iteration by adding the digits of time to the bars as well as flipping the bars to go from left to right instead of right to left. I was able to implement both of these in my second iteration of the lab by doing some simple algebra. I was unable to create circles for the unlocking sequence so I opted to make it a smaller rectangle and allowed for room to display the correct button pushes on the side as seen in the video below.
 
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+https://user-images.githubusercontent.com/89855265/134968515-ba0deafb-4592-4d2b-9b2b-3136c45dbf39.mov
+
+
+
+
 
 
