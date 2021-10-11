@@ -55,9 +55,14 @@ One thing that was a major factor in the usability of our initial device design 
 
 An easy interaction that would help the user to interact with the device would possibly be the addition of visuals such as a red or green light if the device did or did not understand the request of the user. (i.e. the speech was recognized incorrectly.) This way the user would be able to tell what has gone wrong with the interaction or understand that the device was not able to understand their speech. Another way to implement the same feature could be to have two different tones to play if the device was or wasn't able to understand what the user was saying.
 
-Another way to improve the interaction of our device would be to have a visual display of a person as the device is acting as a personal assistant. Adding a dynamic visual like this could allow the user to easily adapt the problems they are experiencing in the device by being guided by the virtual person.
+Another way to improve the interaction of our device would be to have a visual display of a person as the device is acting as a personal assistant. Adding a dynamic visual like this could allow the user to easily adapt the problems they are experiencing in the device by being guided by the virtual person. We originally had thought of using some type of servo powered doll to achieve this, but we had decided that the use of a virtual person may be better as it would then not be limited by the movements of the servos
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
+
+Here is an updated story board that implements the use of a digital person instead of a physical one so that the device can be more dynamic based on user input.
+
+![IMG_20211007_103853](https://user-images.githubusercontent.com/89855265/136857611-602cee13-4050-4bc3-8945-f7a2ec02a94b.jpg)
+
  
 ## Prototype your system
 
@@ -82,13 +87,17 @@ Answer the following:
 ### What worked well about the controller and what didn't?
 
 \*\**your answer here*\*\*
+The controller tht we used for our device is the same one that is used for the "Wizarding the Device" section in the first part of the lab, but was modified to no longer use the accelerometer as our device did not require motion detection. Being able to change the speech on the fly based on what the user said to the device was very helpful and allowed the person that was controlling the device to do so much more dynamically. One bad thing about how we had the controller set up was that everything was separate from one another, meaning that when we were running the wizarding software, we could not run other prorgams on the pi, so we instead utilized powerpoint to display the animations/images that corresponded to the function the user was using. Doing so, however, also lead to problems, as the person controlling the device was required to do multiple tasks at the same time, which might work better if some than 1 person controlled the device.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
 \*\**your answer here*\*\*
+In order to design a more autonomous version of our device, it would require us to have better word recognition for speech to text. With the text that was recorded, we could then pass it through several preprocessing steps such as removing stop word and searching for keywords like "yes" and "no"
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+For our device, a way to make a useful dataset of interactions would be to track the frequency of use of each function of the device that is used, and then suggest the user to create or use the device at these times, similar to how people set reminders for themselves, but instead they would just be reminded by the device who has kept track of all the previous uses.
 
+Another sensor that would make sense to be included in the device is a camera. The addition of a camera would allow the device to recognize colors, which would be helpful for the part of the device that helps you select what to wear. Having only a vague color description given by the user would not yield very good results for the devices suggestions of what color to accompany the shirt or pants with.
