@@ -48,6 +48,7 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
 One thing that was a major factor in the usability of our initial device design was the wording of how the device interacted with the user. While our device was scripted to ask simple questions and receive one word answers such as "Yes", "No", or a time of day, we found that the user who was not aware of the script assumed that the device would be able to understand longer phrases and be able to keep track of answers to questions that it had not yet asked. One major example of this was when the device asked the user if he would like to set an alarm, and the user responded yes and said a time that he wanted the alarm for without being asked for it. If this had been a real device, it may not have been able to understand that the user already gave it a time and asked "what time would you like to set the alarm for?" even though the user had already stated that.
 
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
