@@ -48,9 +48,15 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-3. Make a new storyboard, diagram and/or script based on these reflections.
+One thing that was a major factor in the usability of our initial device design was the wording of how the device interacted with the user. While our device was scripted to ask simple questions and receive one word answers such as "Yes", "No", or a time of day, we found that the user who was not aware of the script assumed that the device would be able to understand longer phrases and be able to keep track of answers to questions that it had not yet asked. One major example of this was when the device asked the user if he would like to set an alarm, and the user responded yes and said a time that he wanted the alarm for without being asked for it. If this had been a real device, it may not have been able to understand that the user already gave it a time and asked "what time would you like to set the alarm for?" even though the user had already stated that.
 
+2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+An easy interaction that would help the user to interact with the device would possibly be the addition of visuals such as a red or green light if the device did or did not understand the request of the user. (i.e. the speech was recognized incorrectly.) This way the user would be able to tell what has gone wrong with the interaction or understand that the device was not able to understand their speech. Another way to implement the same feature could be to have two different tones to play if the device was or wasn't able to understand what the user was saying.
+
+Another way to improve the interaction of our device would be to have a visual display of a person as the device is acting as a personal assistant. Adding a dynamic visual like this could allow the user to easily adapt the problems they are experiencing in the device by being guided by the virtual person.
+
+3. Make a new storyboard, diagram and/or script based on these reflections.
+ 
 ## Prototype your system
 
 The system should:
@@ -69,6 +75,7 @@ Answer the following:
 
 ### What worked well about the system and what didn't?
 \*\**your answer here*\*\*
+
 
 ### What worked well about the controller and what didn't?
 
