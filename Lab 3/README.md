@@ -82,7 +82,7 @@ Answer the following:
 
 ### What worked well about the system and what didn't?
 \*\**your answer here*\*\*
-
+One part that worked well about the system was that 
 
 ### What worked well about the controller and what didn't?
 
@@ -93,7 +93,9 @@ The controller that we used for our device is the same one that is used for the 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
 \*\**your answer here*\*\*
-In order to design a more autonomous version of our device, it would require us to have better word recognition for speech to text. With the text that was recorded, we could then pass it through several preprocessing steps such as removing stop word and searching for keywords like "yes" and "no"
+In order to design a more autonomous version of our device, it would require us to have better word recognition for speech to text. With the text that was recorded, we could then pass it through several preprocessing steps such as removing stop word and searching for keywords like "yes" and "no." Utilizing the data we are able to properly process via speech to text methods, we would then be able to control our device based off of what the user said. Having good natrual language processing methods is they most important key in creating any voice activated system, as long as the device is able to process and understand what the user is asking, then they can give a proper response.
+
+Another way to make this device completely autonomous would be to remove the voice controlled aspects and always have all features activated. A simple way to implement this into our device would be to have a camera detect the color of the users clothes, and then give a color that would match well automatically without any user input. Another way to make our device more autonomous would be to have the device set alarms for the user without asking based on previous user input. This would require some machine learning and would also likely not be a useful function as it would scare/surprise people. To automate the function of waving/greeting people would be relatively easy, but could be implemented in varying complexity. For example, it could automatically give a generic greeting based off of motion sensing, or it could integrate facial recognition and greet people by their name if the device is aware of it and ask for their name if it is not.
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
