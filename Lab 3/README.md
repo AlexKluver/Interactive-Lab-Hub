@@ -81,18 +81,16 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
 One part that worked well about the system was that 
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
 
 The controller that we used for our device is the same one that is used for the "Wizarding the Device" section in the first part of the lab, but was modified to no longer use the accelerometer as our device did not require motion detection. Being able to change the speech on the fly based on what the user said to the device was very helpful and allowed the person that was controlling the device to do so much more dynamically. One bad thing about how we had the controller set up was that everything was separate from one another, meaning that when we were running the wizarding software, we could not run other prorgams on the pi, so we instead utilized powerpoint to display the animations/images that corresponded to the function the user was using. Doing so, however, also lead to problems, as the person controlling the device was required to do multiple tasks at the same time, which might work better if some than 1 person controlled the device.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
 In order to design a more autonomous version of our device, it would require us to have better word recognition for speech to text. With the text that was recorded, we could then pass it through several preprocessing steps such as removing stop word and searching for keywords like "yes" and "no." Utilizing the data we are able to properly process via speech to text methods, we would then be able to control our device based off of what the user said. Having good natrual language processing methods is they most important key in creating any voice activated system, as long as the device is able to process and understand what the user is asking, then they can give a proper response.
 
 Another way to make this device completely autonomous would be to remove the voice controlled aspects and always have all features activated. A simple way to implement this into our device would be to have a camera detect the color of the users clothes, and then give a color that would match well automatically without any user input. Another way to make our device more autonomous would be to have the device set alarms for the user without asking based on previous user input. This would require some machine learning and would also likely not be a useful function as it would scare/surprise people. To automate the function of waving/greeting people would be relatively easy, but could be implemented in varying complexity. For example, it could automatically give a generic greeting based off of motion sensing, or it could integrate facial recognition and greet people by their name if the device is aware of it and ask for their name if it is not.
@@ -100,7 +98,6 @@ Another way to make this device completely autonomous would be to remove the voi
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
 For our device, a way to make a useful dataset of interactions would be to track the frequency of use of each function of the device that is used, and then suggest the user to create or use the device at these times, similar to how people set reminders for themselves, but instead they would just be reminded by the device who has kept track of all the previous uses.
 
 Another sensor that would make sense to be included in the device is a camera. The addition of a camera would allow the device to recognize colors, which would be helpful for the part of the device that helps you select what to wear. Having only a vague color description given by the user would not yield very good results for the devices suggestions of what color to accompany the shirt or pants with.
