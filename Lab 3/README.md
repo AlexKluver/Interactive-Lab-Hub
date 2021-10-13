@@ -75,6 +75,9 @@ The system should:
 
 *Include videos or screencaptures of both the system and the controller.*
 
+Below is a youtube link to the video
+https://youtu.be/rbwChiAJ7b0
+
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
@@ -82,7 +85,9 @@ Answer the following:
 
 ### What worked well about the system and what didn't?
 
-One part that worked well about the system was that 
+One part that worked well about the system was that it worked mostly as intended. The device has a very limited feature set for a personal assistant, as it can only set an alarm, greet people/say goodbye, and help a person select a shirt color. Since the system was limited, the choice to use static images to convey information to the user was helpful. These simple images were displayed to clarify what the device was trying to say, for example, when the device asks about setting an alarm, it displays a picture of a clock, or when the device is saying goodbye, it strings together several images into a waving animation. The inclusion of these visual made the system much more enjoyable and easier to understand.
+
+One thing that did not work well for the system was the actual voice detection for the speech to text, since the user must be quite close to the device for the microphone to pick up the speech correctly, this required the wizard/controller to be in close proximity to the person using the device so that they could queue up the proper response for the text to speech aspect. Another thing that did not work well with the system was that since we did not use any camera to actually see the color of what a person was wearing, we only have a vague idea of the actual color of the users pants, which is not very helpful when it needs to make a suggestion.
 
 ### What worked well about the controller and what didn't?
 
