@@ -75,7 +75,8 @@ The system should:
 
 *Include videos or screencaptures of both the system and the controller.*
 
-Below is a youtube link to the video
+Below is a youtube link to the video:
+
 https://youtu.be/rbwChiAJ7b0
 
 ## Test the system
