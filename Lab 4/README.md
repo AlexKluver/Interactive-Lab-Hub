@@ -174,11 +174,20 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+![image](https://user-images.githubusercontent.com/89855265/137779392-fc9818ec-7f96-4987-b273-06e3f68195c9.png)
+
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+One of the major questions when sketching out various prototypes that incorporate the sensors was "are the sensors capable of measuring with enough accuracy such that the device will actually be useful?" In order to fully understand the capabilities of the sensors, each one would have to be incorporated into a physical prototype to measure their sensitivity.
+
+Another question that came up when sketching the prototypes was "is my device designed to work in a active or passive manner?" Which is essentially asking if my device requires the user to be aware of how to interact with the device to be able to use it or does the device work without explicit user input. This question does not require physical prototyping to understand, but instead it requires deeper thought into how you intend the end device to work. 
+
+The most important question that I had asked myself when drawing these designs was "how big should my device be?" This is something that can easily be answered by creating a full size physical protoype of the device. This prototype does not require any of the sensors to be implemented yet, but instead just needs to be carried out to determine if the chosen size of the device makes sense.
+
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
+The design that I have chosen to move forward with for the remainder of the lab is the Twizzler piano as seen in number 2 of the design sketches.
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -219,13 +228,27 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+![image](https://user-images.githubusercontent.com/89855265/137779458-987441dd-a2d8-4567-a6df-60b92ffa3141.png)
+![image](https://user-images.githubusercontent.com/89855265/137779518-e9a2d0b6-7da7-4328-9516-ffd0a6c9c84a.png)
+
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+As the device I have chosen to create does not use the distance or proximity sensor, the size and overall shape of the device is arbitrary as long as each sensor can still be connected to the pi, however, one major question that arrose when creating the prototype designs for this lab was "where should I place the sensors on my device so that the user can interact with each of them without interference from another sensor. By drawing 3 dimensional renderings of the prototypes, these places can be intuitively chosen based on how you expect the user to interact with the device. In order to fully answer this question, I would need to physically prototype the interface of the design and test it out to see if my assumptions of sensor placement were true.
+
+Another question that I had thought of when sketching the prototypes was "should my design incorporate similarities to common design templates that already exist?" Another way to think of this question in relation to my chosen device design is "should I design it to look like a piano or change the look to something new?" I decided that it would be better to incorporate established designs into my prototype so that a new user of the device can intuitively understand how to use the device without explanation. Again, to better understand this question, I would need to prototype the physical interface of the device and have other use the device to see if they understand what it is without the need for an explanation.
+
+
+
+
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+The display design that I have chosen to integrate into my prototype is design 4 as shown above, which includes a joystick/rotary encoder (tbd on which one will be used), the OLED display for showing the notes of the piano, the capacitive sensor for detecting key touches, and the alligator clips to connect the capacitive sensor to the keys.
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
-
+ The reasoning behind choosing this design is because it is a classical piano style design where the "keys" are positioned vertically across the face of the device. This design provides initial intuition on how to interact with the device as it is something that people will have seen before and know how to use. In addition to this design, I plan on adding the rotary encoder to either control the volume or the pitch of the piano.
+ 
+ The size of the design was chosen to be large because I wanted to give the user of the device sufficient spacing between the keys of the piano so that they do not accidentily touch a key they had not intended to. The position of the OLED display was chosen to be centered at the bottom of the box because this is where it would be the most visible while not being in the way of the rest of the parts in the design. The speaker was placed next to the OLED for symmetry purposes, and a cutout will be made so that the sound can be properly heard. The joystick was placed in the bottom left-hand corner of the face of the device so that it can be controlled with the left hand of the user while they interact with the keys. I chose the left side for this because most people are right handed and will use their right hand to control the active parts of the device (i.e. the keys) and their left hand to adjust the pitch.
+ 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
