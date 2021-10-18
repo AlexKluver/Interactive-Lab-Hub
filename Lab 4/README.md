@@ -253,6 +253,12 @@ Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+Outside of prototype design:
+![image0 (2)](https://user-images.githubusercontent.com/89855265/137804193-a1e67d27-2cbf-4d2e-b927-f654b6887caa.jpeg)
+Conductive tape was used instead of twizzlers because I did not have any twizzlers. Otherwise the prototype is exactly as seen in the sketch
+
+Inside of the prototype:
+![image1 (1)](https://user-images.githubusercontent.com/89855265/137804207-9b20fad1-12b9-4abd-810f-ae91ac605466.jpeg)
 
 LAB PART 2
 
