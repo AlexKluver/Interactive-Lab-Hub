@@ -299,7 +299,50 @@ We encourage you to try using these controls, **while** paying particular attent
 ### Record
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
 
+* "Looks like": shows how the device should look, feel, sit, weigh, etc.
+Here is the final sketch of the exterior of the device. The goal is to get the device to look as close to this as possible given the equipment that is available. As seen in the sketch, I plan to include the capacitive sensor to detect the key-press, the speaker/webcam to play to tone, and the joystick to alter the pitch of the note. In addition to these sensors, a OLED display will be included at the bottom of the face of the device to display the note that is being played. The end goal is for this device to function similarly to a electric piano with a pitch changer.
+  ![image](https://user-images.githubusercontent.com/89855265/138771854-c79ed421-43eb-4439-b6eb-b0cb741224b5.png)
+
+Below, I have provided several pictures of iterations made to the device throughout the creation process. most notably the inclusion of labels for the device sensors. Without labels, the device was slightly confusing to use since the user was not aware of what each sensor was being used for.
+
+Inside of first iteration:
+![image2 (1)](https://user-images.githubusercontent.com/89855265/138772637-e86f5525-453e-4d56-b250-cf6d302299a2.jpeg)
+
+Outside of first iteration:
+![image3 (1)](https://user-images.githubusercontent.com/89855265/138772715-49549ae1-24df-40e9-beb2-d98e05370941.jpeg)
+
+Outside of Final Iteration:
+![image4 (1)](https://user-images.githubusercontent.com/89855265/138772792-f98d11a1-708b-4ef7-9f49-2b0ba0587e14.jpeg)
+
+Side angle of final iteration:
+![image0 (3)](https://user-images.githubusercontent.com/89855265/138772837-458de317-4b68-4294-b269-14c5a26957b1.jpeg)
+
+
+* "Works like": shows what the device can do
+Below I have made a few videos displaying how each sensor works in the device as well as a complete overview of the device. The device worked great and eexactly as I had intended it to. The only thing that I think could have been better is if I had a box that was better suited for this device, but I did not have one available.
+
+Here is a video showing how the notes of each of the keys are displayed on the OLED display.
+
+https://user-images.githubusercontent.com/89855265/138773320-1b6d5a94-5c54-4882-b0c4-d126f9f05811.mov
+
+Here is a video walkthrough of how the device works overall:
+
+
+
+https://user-images.githubusercontent.com/89855265/138775329-57c64bb4-c9c7-443d-a981-bcfaa76526ef.mov
+
+
+
+* "Acts like": shows how a person would interact with the device
+Shown below are two different videos showing how someone would interact with the device.
+
+Here is an interaction with the device of a user playing a song without using the joystick:
+https://user-images.githubusercontent.com/89855265/138774402-ed6e0b5c-f2f8-4cf4-951d-bf0b454cb5e1.mov
+
+Here is another interaction with the device where the user plays the same song as before, but using the joystick instead to produce similar notes:
+
+https://user-images.githubusercontent.com/89855265/138774573-f15ade0c-14ba-406f-a02c-dedc30d15cb7.mov
+
+
+The overall interactions with the device went well. Since the device was made to look and work like a classical electric piano, it was relatively simple to interact with since most people have at one point in their lifetime attempted to play a piano. The addition of the labels on the device was definitely necessary, however, since not all users were aware of what the additional sensors (the ones other than the capacitive touch which was for the keypress) were doing. After these labels were added, all user interactions went flawlessly.
