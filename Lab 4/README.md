@@ -335,7 +335,7 @@ https://user-images.githubusercontent.com/89855265/138775329-57c64bb4-c9c7-443d-
 
 
 * "Acts like": shows how a person would interact with the device
-Shown below are two different videos showing how someone would interact with the device.
+Shown below are two different videos showing how someone would interact with the device. The code used to control the piano can be found in piano.py
 
 Here is an interaction with the device of a user playing a song without using the joystick:
 https://user-images.githubusercontent.com/89855265/138774402-ed6e0b5c-f2f8-4cf4-951d-bf0b454cb5e1.mov
