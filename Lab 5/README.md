@@ -55,30 +55,20 @@ The object detection was the program that I found to have much less useful appli
 
 (You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
 
+While I found this program to be very interesting, using it on the raspberry pi was not pleasant in my experience, as it significantly slowed down the entire pi and caused other running programs to crash, which is likely due to the higher complexity of computations being done in the program. 
+
+Similar programs are used in bodytracking in motion pictures. The important areas of motion on ones body will be mapped with a dot like seen at the joints of my hand in the photo below. This data will then be filmed to collect data on natural movements and then is often used as the movements of cgi characters in film or sometimes even used as a guide for movement in 2D animation. Another more novel application of this could be to again track the movements of peoples bodies, but in a medical setting where a doctor can overlook the range of motion their patient has in certain parts of their body. A place where this could be significantly useful would be in physical therapy to gauge progress.
+<img width="326" alt="handpose" src="https://user-images.githubusercontent.com/89855265/139731660-624f0e22-de43-4f71-b4ad-727599c2b1fa.PNG">
+
 
 
 #### Teachable Machines
-Google's [TeachableMachines](https://teachablemachine.withgoogle.com/train) might look very simple. However, its simplicity is very useful for experimenting with the capabilities of this technology.
 
-![Alt Text](tm.gif)
-
-To get started, create and activate a new virtual environment for this exercise with special indication:
-
-```
-pi@ixe00:~ $ virtualenv tmachine --system-site-packages
-pi@ixe00:~ $ source tmachine/bin/activate
-(tmachine) pi@ixe00:~ $ 
-```
-
-After activating the virtual environment, install the requisite TensorFlow libraries by running the following lines:
 ```
 (tmachine) pi@ixe00:~ $ cd Interactive-Lab-Hub/Lab\ 5
 (tmachine) pi@ixe00:~ Interactive-Lab-Hub/Lab 5 $ sudo chmod +x ./teachable_machines.sh
 (tmachine) pi@ixe00:~ Interactive-Lab-Hub/Lab 5 $ ./teachable_machines.sh
 ``` 
-
-This might take a while to get fully installed. After installation, connect your webcam to your Pi and use **VNC to access to your Pi**, open the terminal, and go to Lab 5 folder and run the example script:
-(***it will not work if you use ssh from your laptop***)
 
 ```
 (tmachine) pi@ixe00:~ Interactive-Lab-Hub/Lab 5 $ python tm_ppe_detection.py
