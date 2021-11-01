@@ -91,21 +91,50 @@ Try out different interaction outputs and inputs.
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+For this interaction, I have decided that I wanted to use the teachable model to detect if I was wearing my glasses or not because I often forget to wear my glasses and don't realize it until I have gotten to class and cannot see what is on the board or projector. For something like this to be useful, it would have to be set up at the exit of my apartment and make a noise if I am trying to leave without having my glasses on. To implement this, I used the google teachable model interface that was suggested earlier in the lab. For the device to be useful to me, however, it must be able to detect that I am wearing any one of my three pairs of glasses, meaning it assigns a binary output to a continuous input. A video of live feed interaction with the device can be seen below in part D.
+
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+  
+After programming the teachable machine with many about 100 different images of me wearing and not wearing glasses into the respective classes and testing out the device, I noticed that this was not nearly enough images for it to correctly classify as I had only kept myself centered in the photos for each of the classes, which lead to many misiclassifications when i was uncentered in the frame. To fix this I added an additional 1000 photos at various angles and locations to add variation to the model. After adding these additional images and retraining the model, the output was much more accurate at detecting if I was wearing my glassses.
+
+2. When does it fail?
+
+When testing the device further, I noticed that my webcam would attempt to dynamically change the lighting so that it could better bring images into focus, howver, this lead to there being an instance where the model could not tell if I had my glasses on or not, which caused the output to be erratic and inconsistent. This tells me that for this device to work, there must be consistant lighting so that the camera does not attempt to adjust itself or I have to disable this feature in the camera. 
+
+Also another part where the machine was having difficulties classifying was when I wore my glasses that had thin wire frames. This is most likely due to the fact that the camera is not high enough resolution and did not have enough contrast present to tell if I was wearing glasses. In a way, a false negative classification of not wearing glasses would be most appropriate in the scenario as the purpose of thin framed glasses to for people to not notice them as much. I believe that a similar situation would happen if one was to test the device with clear framed glasses.
+
+3. When it fails, why does it fail?
+
+As discussed in the section above, the device ususally fails when it is unable to gather enough information to correctly classify the datapoint. root causes for this in my experiences were usually due to the small amount of classification training data and lack of consistancy when testing the teachable machine. The largest factor in this, however, seemed to be the positioning of my head in the frame. If I was positioned in a place where I have no data from either class, then the classification would erratically change because the output was undetermined. The only way that it would be possible to fix this would be to train the device with enough variation in the rest of the environment that it could focus specifically on the fact that I was or wasn't wearing glasses. Lighting also played a large factor because of the visibility of objects in the frame, but if this device were to be used in the real world, a high variation of lighting will need to be used in the training data, or other methods such as infrared cameras could be used so that lighting is not important. 
+
+4. Based on the behavior you have seen, what other scenarios could cause problems?
+
+Other situations that I could see this device having problems clsasifying correcly would be if the user was wearing any type of headwear so that thte device was not able to see the users face directly, and therefore could not determine if their glasses were on.Ultimately, the only thing that leads to failure in a teachable machine like this is obstruction of view or lack of training data. If we assume that the users face is visible in the frame , the camera has a high enough resolution to detect the glasses, and we have a near infinite amount of training data, then the device's classification would be near perfect.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+
+If someone was using a image classification system like the one I have implemented to detect if the user is wearing glasses, I would be under the assumption that the user is aware of the behavior of the system and that the user must be clearly visible to the camera so that it can make a proper detection. The other uncertainties in the system, such as the dynamic lighting adjustments of the camera or the possible depth uncertainty would not be immediately apparent to the user, and could definitely cause problems.
+
+2. How bad would they be impacted by a miss classification?
+
+Being experienced in often forgetting to put on my glasses before I leave my apartment, I can say that the impact is heavily based on the things that they will be doing throughout the day as well as the type of activities they are doing. For example, the times that it would affect me the most is if I forget my glasses when I am leaving to attend lecture, then I am unable to see what the professor is displaying and cannot learn as much. However, if I am not going anywhere that I need to be able to read anything at long distances, I will be minimally affected. This impact would be case-by-case and vary rgeatly for each user.
+
+3. How could change your interactive system to address this?
+
+Some simple ways that the system could deal with these misclassifications is going to be put into a list format below:
+-Camera changing lighting: fix the camera so that it does not dynamically change with the environment or autofocus on any objects
+-lack of datapoints for training: add active classification datapoints with a ligh likelihood to the training data pool so that a higher variation of data can be used to train the model. This is similar to how must unsupervised machine learning method work.
+-Users face is obstructed by an object: have several cameras at different angles or have a wide angle lens to that the users face is always in view.
+
+5. Are there optimizations you can try to do on your sense-making algorithm.
+
+Without access to the actual algorithm behind the teachable model, no algorithmic optimizations can be done. The only things that I would be able to change so that the model has a higher likelihood of the correct classification is to ensure the physical environment is in a constant state and to train the model with a very arge amount of training datapoints to ensure the model fits correctly with a variety of different inputs.
 
 ### Part D
 ### Characterize your own Observant system
@@ -113,14 +142,39 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+
+The purpose of the device is to detect if the user is wearing their glasses when they are leaving their home. The device uses basic image processing and an unknown classification model to determine a binary output, which is true if the user is wearing glasses and false if not. The device will then beep to tell the user to go back and put their glasses on.
+
 * What is a good environment for X?
+
+An ideal environment for a device like this would be near the exit to ones house or apartment as well as has sufficient lighting and a clear view of the user as they exit. With these three aspects in the environment, the model can reliably classify in most instances.
+
 * What is a bad environment for X?
+
+A bad environment for the device would be in a unlit room, where it cannot properly see the users face to determine the classification point or if the device is obstructed by another object or is in a place that it cannot easily seee the users face.
+
 * When will X break?
+
+Theoretically, a device like this would not break if implemented correctly. The only time there would be a misclassification is if the user is not clearly visible in the frame of the camera or the lighting is poor. However, such a device shouold only output true is it has a very high certainty, so a high likelihood threshold would have to be set. The device would not work as well at night because the natural lighting is likely not going to be as beneficial to the device as during the day.
+
 * When it breaks how will X break?
+
+As discussed in most of the prior paragraphs the device will only break if their is insufficient lighting or an obstruction of view of the camera where it cannot properly see the user of the device.
+
 * What are other properties/behaviors of X?
+
+Another behavior of the device could be to have a red or green light present on the exit of the room to signify if the user is wearing their glasses, this way they do not have the possibility of accidentily missing the beep.
+
 * How does X feel?
+Good I guess? The user would not forget to wear their glasses as often and would live a better life.
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+
+https://user-images.githubusercontent.com/89855265/139757209-3fd57583-6867-4bec-98e1-833a87286542.mp4
+
+
+
 
 ### Part 2.
 
