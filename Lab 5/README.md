@@ -77,7 +77,7 @@ Similar programs are used in bodytracking in motion pictures. The important area
 
 **\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***
 
-
+I am unsure of the intended classifications of the provided teachable machine, but the only two outputs I was able to get in several sessions of using it was "mask" and "background." A useful application for a teachable machine would be for it to be able to detect fraudulant ID cards. Using the data that is available about ID's a teachable machine could be made to check for obvious flaws in fake drivers licenses and categorize them as either fake or real. A teachable machine like this seems to use a larger amount of machine learning to be able to actively take in an image and correctly classify it. This greater amount of image processing allows for objects to be more complexly classified rather than relying on individual shapes present in the image, which was a large downfall of most of the openCV options.
 <img width="405" alt="teachables" src="https://user-images.githubusercontent.com/89855265/139727307-9268ac32-b134-41c7-8fd5-f34410fd32b6.PNG">
 
 
