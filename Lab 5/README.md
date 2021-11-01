@@ -28,11 +28,25 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 #### Contours
 
+As seen below, I used the contours program when in the in-class lab session. The program uses the webcam and outlines everything that it can detect in a bright green color. One design that would be a very useful application of the contour detection is image or shape recognition. If you point this camera at a certain image and it can properly correlate the contour outlines with a corresponding output, then it could be used to unlock or verify the identity of someone. A common use of technology similar to this is Apple's FaceID, which pairs face contours with classical image classification.
+
+<img width="325" alt="contour" src="https://user-images.githubusercontent.com/89855265/139725430-c190e56d-f747-4e1b-98bc-6b23b1167231.PNG">
+
 #### Face-Detection
+From my experience with the use of the facial recognition in the lab session, I could see that there were a large amount of flaws in the program. One of those being that it was generally not very successful at detecting the overall features of the face. The screenshot that was provided was one of the short periods of time that I was able to get the program to run correctly. One major issue I experienced was that it kept detecting my nostrils as eyes, and would rarely detect my eyes, especially when I was wearing my glasses. One good application of a working face-detecting device would be to simply turn a device on when it is looked at. More commonly, devices are movement or touch sensitive to turn on, but face detection would be a cool way to implement a similar feature.
+
+<img width="325" alt="face detection w glasses" src="https://user-images.githubusercontent.com/89855265/139725439-de13624d-5146-4975-aecb-0f1ebe453c41.PNG">
 
 #### Optical Flow
+Optical flow on the pi was very finicky, most of the time when the program was run it would crash before the webcam display would launch, presumably because the program was unable to find any anchor points for the optical flow. This program would be useful to tracking the path and position of objects over time. For example,it could be used to follow the path of a golf ball in flight if it had the optical capablities.
+
+<img width="321" alt="flow detection" src="https://user-images.githubusercontent.com/89855265/139725454-30e30952-3b2f-477c-a50d-9647e6a1fb06.PNG">
 
 #### Detect
+The object detection was the program that I found to have much less useful applications for compared to the others. One simple way it could be used however, would be to count the number of people in a venue. If the object detection was better, then it could assign each person as an object and then count the number of assigned objects and that would correspond to the amount of people present. This would require a birds-eye view of the venue so that it would be able to see all people at the same time, lowering the risk of double counting. Below shows detection of my hand, and the next photo shows detection of the keypad.
+
+<img width="325" alt="object detection hand" src="https://user-images.githubusercontent.com/89855265/139725579-6aab1982-b207-4ba8-90df-03c4ab23fc91.PNG">
+<img width="327" alt="number pad detection" src="https://user-images.githubusercontent.com/89855265/139731327-913d9604-a9ca-4cfc-ae7e-d764905441fd.PNG">
 
 #### MediaPipe
 
@@ -74,6 +88,7 @@ This might take a while to get fully installed. After installation, connect your
 **\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***
 
 
+<img width="405" alt="teachables" src="https://user-images.githubusercontent.com/89855265/139727307-9268ac32-b134-41c7-8fd5-f34410fd32b6.PNG">
 
 
 
