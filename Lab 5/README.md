@@ -181,3 +181,7 @@ https://user-images.githubusercontent.com/89855265/139757209-3fd57583-6867-4bec-
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+Below is a video explaining how the device works as well as a sample of thew device being used from the perpective of the machine and the perspective of the user.
+
+https://youtu.be/7DucH9Zj6jQ
